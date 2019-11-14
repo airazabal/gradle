@@ -1,0 +1,21 @@
+apiVersion: appsody.dev/v1beta1
+kind: AppsodyApplication
+metadata:
+  annotations:
+    image.opencontainers.org/created: "2019-11-12T16:42:32-05:00"
+    stack.appsody.dev/configured: appsody/gradle-jdk8:0.1
+    stack.appsody.dev/created: 2019-11-12T16:34:46-0500
+    stack.appsody.dev/revision: 05ab0fa4f76b466294da8b7b06a1971ac4ed29b0
+    stack.appsody.dev/tag: appsody/gradle-jdk8:0.1.0
+  labels:
+    image.opencontainers.org/title: gradle
+    stack.appsody.dev/version: 0.1.0
+  name: gradle
+spec:
+  applicationImage: image-registry.openshift-image-registry.svc:5000/default/micro-customer
+  createKnativeService: false
+  expose: true
+  service:
+    type: NodePort
+  stack: gradle-jdk8
+  version: 1.0.0

@@ -1,0 +1,2 @@
+project-name: gradle
+stack: appsody/gradle-jdk8:0.1
